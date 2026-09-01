@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Growth Hub by Saurabh Nayak — performance-driven digital marketing for brands ready to grow. SEO, social media, paid ads, content, websites and analytics.">
+<title>Growth Hub | Digital Marketing That Drives Growth</title>
+<style>
+:root{--ink:#101828;--muted:#667085;--brand:#635bff;--brand2:#8b5cf6;--soft:#f6f7fb;--white:#fff;--line:#eaecf0;--green:#12b76a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(234,236,240,.8)}
+.navbar{height:76px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:-.7px}.logo span{color:var(--brand)}
+.navlinks{display:flex;gap:28px;color:#475467;font-size:14px;font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;font-weight:800;font-size:14px;transition:.2s;border:1px solid transparent}
+.btn-primary{background:var(--ink);color:#fff}.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 25px #10182822}
+.btn-outline{border-color:var(--line);background:#fff}.btn-outline:hover{border-color:#cfd4dc}
+.hero{padding:90px 0 70px;background:radial-gradient(circle at 80% 20%,#e9e7ff 0,transparent 30%),linear-gradient(180deg,#fbfbff,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.badge{display:inline-flex;gap:8px;align-items:center;background:#f0efff;color:#5146d8;padding:8px 12px;border-radius:999px;font-weight:800;font-size:12px;margin-bottom:22px}
+h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-3.5px;margin-bottom:24px}
+.gradient{background:linear-gradient(90deg,var(--brand),var(--brand2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:18px;color:var(--muted);max-width:620px;margin-bottom:30px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-card{background:#111827;border-radius:28px;padding:26px;color:#fff;box-shadow:0 25px 70px #635bff28}
+.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.pill{font-size:11px;background:#ffffff14;border:1px solid #ffffff1f;padding:7px 10px;border-radius:99px}
+.chart{height:210px;display:flex;align-items:flex-end;gap:12px;padding:10px 0 20px}
+.bar{flex:1;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#9b8cff,#635bff);min-height:35px}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.kpi{background:#ffffff0d;padding:14px;border-radius:14px}.kpi b{display:block;font-size:23px}.kpi small{color:#98a2b3}
+.section{padding:92px 0}.soft{background:var(--soft)}
+.section-head{max-width:720px;margin-bottom:42px}.eyebrow{font-size:12px;font-weight:900;color:var(--brand);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px}.section h2{font-size:42px;line-height:1.1;letter-spacing:-1.8px;margin-bottom:14px}.section-head p{color:var(--muted)}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{padding:28px;background:#fff;border:1px solid var(--line);border-radius:20px;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 15px 40px #1018280b}
+.icon{width:46px;height:46px;border-radius:13px;background:#f0efff;display:grid;place-items:center;color:var(--brand);font-weight:900;margin-bottom:18px}.service h3{font-size:19px;margin-bottom:7px}.service p{font-size:14px;color:var(--muted)}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:25px;border-radius:18px;background:#fff;border:1px solid var(--line)}.num{font-weight:900;color:var(--brand);font-size:13px;margin-bottom:25px}.step h3{margin-bottom:7px}.step p{font-size:13px;color:var(--muted)}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:18px}.result{padding:28px;border:1px solid var(--line);border-radius:20px}.result strong{font-size:36px}.result p{color:var(--muted);font-size:14px}.check{color:var(--green);font-weight:900;margin-right:8px}
+.cta{padding:60px;border-radius:28px;background:linear-gradient(115deg,#111827,#27204f);color:#fff;display:flex;justify-content:space-between;gap:30px;align-items:center}.cta p{color:#c6cbd4;max-width:650px}.cta .btn{background:#fff;color:#111827}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}.founder{border-radius:25px;padding:45px;background:linear-gradient(145deg,#efedff,#fff);border:1px solid #ddd9ff}.avatar{width:110px;height:110px;border-radius:50%;display:grid;place-items:center;background:#111827;color:#fff;font-size:35px;font-weight:900;margin-bottom:20px}
+footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.navlinks{display:none}.hero-grid,.about,.results{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.hero{padding-top:55px}h1{letter-spacing:-2px}.cta{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.grid-3,.process,.kpis{grid-template-columns:1fr}.section{padding:65px 0}.section h2{font-size:34px}.hero-card{margin-top:15px}.cta{padding:35px 25px}}
+</style>
+</head>
+<body>
+<nav><div class="container navbar">
+  <a class="logo" href="#">Growth<span>Hub</span></a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#process">Process</a><a href="#results">Results</a><a href="#about">About</a></div>
+  <a class="btn btn-primary" href="#contact">Get a Growth Plan</a>
+</div></nav>
+
+<header class="hero"><div class="container hero-grid">
+  <div>
+    <div class="badge">● PERFORMANCE-DRIVEN DIGITAL MARKETING</div>
+    <h1>Turn attention into <span class="gradient">real growth.</span></h1>
+    <p>Growth Hub helps ambitious businesses build visibility, generate qualified leads and convert more customers through strategy, creative and measurable digital marketing.</p>
+    <div class="actions"><a class="btn btn-primary" href="#contact">Start Growing →</a><a class="btn btn-outline" href="#services">Explore Services</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="card-top"><b>Growth Dashboard</b><span class="pill">LIVE STRATEGY</span></div>
+    <div class="chart">
+      <div class="bar" style="height:32%"></div><div class="bar" style="height:43%"></div><div class="bar" style="height:48%"></div><div class="bar" style="height:63%"></div><div class="bar" style="height:70%"></div><div class="bar" style="height:86%"></div><div class="bar" style="height:100%"></div>
+    </div>
+    <div class="kpis"><div class="kpi"><b>+184%</b><small>Reach</small></div><div class="kpi"><b>3.8×</b><small>ROAS</small></div><div class="kpi"><b>+67%</b><small>Leads</small></div></div>
+  </div>
+</div></header>
+
+<section id="services" class="section"><div class="container">
+  <div class="section-head"><div class="eyebrow">What we do</div><h2>Everything you need to grow online.</h2><p>From discovery to conversion, Growth Hub brings the core digital marketing functions together under one clear strategy.</p></div>
+  <div class="grid-3">
+    <div class="service"><div class="icon">SEO</div><h3>SEO & Local SEO</h3><p>Build sustainable search visibility with keyword strategy, technical SEO, on-page optimization and local discovery.</p></div>
+    <div class="service"><div class="icon">AD</div><h3>Paid Advertising</h3><p>Performance campaigns across Google, Meta and other relevant channels, optimized around leads and revenue.</p></div>
+    <div class="service"><div class="icon">SM</div><h3>Social Media</h3><p>Content strategy, creative direction, community growth and platform-native campaigns that earn attention.</p></div>
+    <div class="service"><div class="icon">✦</div><h3>Content Marketing</h3><p>High-value content that educates, builds authority and moves your audience closer to action.</p></div>
+    <div class="service"><div class="icon">WEB</div><h3>Web & Landing Pages</h3><p>Conversion-focused pages designed for speed, clarity, trust and measurable customer journeys.</p></div>
+    <div class="service"><div class="icon">↗</div><h3>Analytics & CRO</h3><p>Track what matters, understand user behavior and continuously improve conversion performance.</p></div>
+  </div>
+</div></section>
+
+<section id="process" class="section soft"><div class="container">
+  <div class="section-head"><div class="eyebrow">Our approach</div><h2>Strategy first. Execution second. Growth always.</h2><p>A simple four-step system designed to make marketing clearer and performance easier to measure.</p></div>
+  <div class="process">
+    <div class="step"><div class="num">01 / DISCOVER</div><h3>Audit & Research</h3><p>We understand your market, audience, competitors, funnel and current digital presence.</p></div>
+    <div class="step"><div class="num">02 / PLAN</div><h3>Growth Strategy</h3><p>We define channels, offers, content, campaigns and KPIs around your business goals.</p></div>
+    <div class="step"><div class="num">03 / LAUNCH</div><h3>Build & Activate</h3><p>Creative, campaigns, SEO, landing pages and tracking go live with disciplined execution.</p></div>
+    <div class="step"><div class="num">04 / OPTIMIZE</div><h3>Measure & Scale</h3><p>We read the data, improve what works and scale the highest-performing opportunities.</p></div>
+  </div>
+</div></section>
+
+<section id="results" class="section"><div class="container">
+  <div class="section-head"><div class="eyebrow">Built for outcomes</div><h2>Marketing should be measurable.</h2><p>We focus on the metrics that connect marketing activity to business outcomes.</p></div>
+  <div class="results">
+    <div class="result"><strong>More visibility</strong><p><span class="check">✓</span>Higher search presence, stronger social reach and a clearer brand footprint.</p></div>
+    <div class="result"><strong>More leads</strong><p><span class="check">✓</span>Better targeting, offers and landing experiences designed to increase qualified enquiries.</p></div>
+    <div class="result"><strong>More conversions</strong><p><span class="check">✓</span>Conversion-focused messaging, creative testing and funnel improvements.</p></div>
+    <div class="result"><strong>Smarter decisions</strong><p><span class="check">✓</span>Tracking and reporting that turns campaign data into practical next steps.</p></div>
+  </div>
+</div></section>
+
+<section id="about" class="section soft"><div class="container about">
+  <div class="founder"><div class="avatar">SN</div><div class="eyebrow">Founder</div><h2>Saurabh Nayak</h2><p style="color:#667085;margin-top:10px">Growth Hub is built around one idea: digital marketing should not just look good — it should move the business forward.</p></div>
+  <div><div class="eyebrow">Why Growth Hub</div><h2>A growth partner, not just another marketing vendor.</h2><p style="color:#667085;margin:16px 0 22px">We combine strategy, creative, performance marketing and analytics into one focused growth system. Whether you are launching, scaling or rebuilding your digital presence, every activity has a job to do.</p><p><b>✓ Clear strategy</b> &nbsp; <b>✓ Creative that converts</b> &nbsp; <b>✓ Transparent reporting</b></p></div>
+</div></section>
+
+<section id="contact" class="section"><div class="container">
+  <div class="cta"><div><div class="eyebrow" style="color:#a69cff">LET'S GROW</div><h2 style="font-size:38px;margin-bottom:8px">Ready to build your growth engine?</h2><p>Tell us where you are today and where you want to go. We'll map the digital marketing opportunities that matter most.</p></div><a class="btn" href="mailto:hello@growthhub.example?subject=Growth%20Hub%20Growth%20Plan">Book a Strategy Call →</a></div>
+</div></section>
+
+<footer><div class="container footer-row"><div><b>Growth Hub</b> · Digital Marketing by Saurabh Nayak</div><div>SEO · Ads · Social · Content · Web · Analytics</div></div></footer>
+</body>
+</html>
